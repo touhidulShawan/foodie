@@ -7,318 +7,455 @@
     <title>Foodie</title>
     <link rel="stylesheet" href="./css/style.css" />
   </head>
-  <body>
-    <header>
+  <body class="bg-gray-100">
+    <header class="py-3">
       <!-- navbar section  -->
-      <section>
-        <nav>
-          <a href="/">Foodie</a>
-          <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Recipe</a></li>
-            <li><a href="#">Resturant</a></li>
-            <li><a href="">About</a></li>
-          </ul>
-        </nav>
-      </section>
+      <nav class="px-2 flex justify-between items-center flex-wrap sm:px-4">
+        <a class="text-2xl mr-2 text-pink-500" href="/">Foodie</a>
+        <ul
+          class="flex justify-between items-center space-x-2 py-2 sm:space-x-4"
+        >
+          <li>
+            <a
+              class="text-gray-500 hover:text-gray-700 transform transition duration-200 focus:outline-none focus:ring-1 focus:ring-offset-2"
+              href="#"
+              >Home</a
+            >
+          </li>
+          <li>
+            <a
+              class="text-gray-500 hover:text-gray-700 transform transition duration-200 focus:outline-none focus:ring-1 focus:ring-offset-2"
+              href="#"
+              >Recipe</a
+            >
+          </li>
+          <li>
+            <a
+              class="text-gray-500 hover:text-gray-700 transform transition duration-200 focus:outline-none focus:ring-1 focus:ring-offset-2"
+              href="#"
+              >Resturant</a
+            >
+          </li>
+          <li>
+            <a
+              class="text-gray-500 hover:text-gray-700 transform transition duration-200 focus:outline-none focus:ring-1 focus:ring-offset-2"
+              href=""
+              >About</a
+            >
+          </li>
+        </ul>
+      </nav>
     </header>
-
-    <section>
-      <!-- left content  -->
-      <div>
-        <h1>Test Our Best Food</h1>
-        <p>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt
-          quae ipsam laboriosam impedit sint eius reprehenderit soluta similique
-          minima, consequuntur ipsum cum natus ducimus cumque doloremque
-          asperiores deleniti magni doloribus!
-        </p>
-        <a href="#">Explore Recipes</a>
-      </div>
-      <div>
-        <img
-          src="./assets/images/Foodie_cover.svg"
-          alt="cover image of foodie"
-        />
-      </div>
-    </section>
-
-    <main>
-      <!-- category section  -->
-      <section>
-        <h2>Our Foods Type</h2>
+    <div class="w-full sm:max-w-2xl sm:mx-auto">
+      <section class="py-3 px-2 flex flex-col-reverse">
+        <!-- left content  -->
         <div>
-          <div>
-            <img
-              src="./assets/images/food_images/Foodie_image10.jpg"
-              alt="food image"
-            />
-            <h4>Food</h4>
-          </div>
-          <div>
-            <img
-              src="./assets/images/food_images/Foodie_image11.jpg"
-              alt="food image"
-            />
-            <h4>Food</h4>
-          </div>
-          <div>
-            <img
-              src="./assets/images/food_images/Foodie_image12.jpg"
-              alt="food image"
-            />
-            <h4>Food</h4>
-          </div>
-          <div>
-            <img
-              src="./assets/images/food_images/Foodie_image13.jpg"
-              alt="food image"
-            />
-            <h4>Food</h4>
-          </div>
-          <div>
-            <img
-              src="./assets/images/food_images/Foodie_image14.jpg"
-              alt="food image"
-            />
-            <h4>Food</h4>
-          </div>
-          <div>
-            <img
-              src="./assets/images/food_images/Foodie_image15.jpg"
-              alt="food image"
-            />
-            <h4>Food</h4>
-          </div>
+          <h1 class="text-gray-900 text-3xl mb-4 text-center sm:text-4xl">
+            Test Our Best Food
+          </h1>
+          <p
+            class="text-sm py-3 tracking-wide leading-6 text-left w-full sm:text-base sm:leading-7"
+          >
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt
+            quae ipsam laboriosam impedit sint eius reprehenderit soluta
+            similique minima, consequuntur ipsum cum natus ducimus cumque
+            doloremque asperiores deleniti magni doloribus!
+          </p>
+          <a
+            class="bg-yellow-300 py-3 px-6 my-3 inline-block text-yellow-900 rounded-md text-sm sm:text-base sm:mt-4 sm:px-8 sm:py-4 transform transition hover:-translate-y-2 duration-300"
+            href="#"
+            >Explore Recipes</a
+          >
+        </div>
+        <div class="mb-4 py-3">
+          <img
+            src="./assets/images/Foodie_cover.svg"
+            alt="cover image of foodie"
+          />
         </div>
       </section>
-      <!-- foods section  -->
-      <section>
-        <h2>Our Latest Dishes</h2>
 
-        <div>
-          <!-- food card start -->
-          <div>
+      <main>
+        <!-- category section  -->
+        <section class="py-4 px-2">
+          <h2 class="text-xl text-center mb-4 sm:text-2xl sm:mb-6">
+            Our Foods Type
+          </h2>
+          <div class="grid grid-cols-1 gap-5 sm:grid-cols-2">
             <div>
               <img
-                src="./assets/images/food_images/Foodie_image16.jpg"
+                class="rounded-md shadow-md"
+                src="./assets/images/food_images/Foodie_image10.jpg"
                 alt="food image"
               />
+              <h4 class="text-xl my-2">Food</h4>
             </div>
-            <div>
-              <h3>Food Name</h3>
-              <h6>Price: $20</h6>
-              <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil
-                optio, quibusdam aliquam fuga enim praesentium eveniet obcaecati
-                explicabo qui aliquid distinctio eligendi, deserunt, minima
-                omnis.
-              </p>
-            </div>
-            <div>
-              <a href="#">Check Details</a>
-              <a href="#">Make an Order</a>
-            </div>
-          </div>
-          <!-- food card end  -->
-          <!-- food card start -->
-          <div>
             <div>
               <img
-                src="./assets/images/food_images/Foodie_image17.jpg"
+                class="rounded-md shadow-md"
+                src="./assets/images/food_images/Foodie_image11.jpg"
                 alt="food image"
               />
+              <h4 class="text-xl my-2">Food</h4>
             </div>
-            <div>
-              <h3>Food Name</h3>
-              <h6>Price: $20</h6>
-              <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil
-                optio, quibusdam aliquam fuga enim praesentium eveniet obcaecati
-                explicabo qui aliquid distinctio eligendi, deserunt, minima
-                omnis.
-              </p>
-            </div>
-            <div>
-              <a href="#">Check Details</a>
-              <a href="#">Make an Order</a>
-            </div>
-          </div>
-          <!-- food card end  -->
-          <!-- food card start -->
-          <div>
             <div>
               <img
-                src="./assets/images/food_images/Foodie_image18.jpg"
+                class="rounded-md shadow-md"
+                src="./assets/images/food_images/Foodie_image12.jpg"
                 alt="food image"
               />
+              <h4 class="text-xl my-2">Food</h4>
             </div>
-            <div>
-              <h3>Food Name</h3>
-              <h6>Price: $20</h6>
-              <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil
-                optio, quibusdam aliquam fuga enim praesentium eveniet obcaecati
-                explicabo qui aliquid distinctio eligendi, deserunt, minima
-                omnis.
-              </p>
-            </div>
-            <div>
-              <a href="#">Check Details</a>
-              <a href="#">Make an Order</a>
-            </div>
-          </div>
-          <!-- food card end  -->
-          <!-- food card start -->
-          <div>
             <div>
               <img
-                src="./assets/images/food_images/Foodie_image21.jpg"
+                class="rounded-md shadow-md"
+                src="./assets/images/food_images/Foodie_image13.jpg"
                 alt="food image"
               />
+              <h4 class="text-xl my-2">Food</h4>
             </div>
-            <div>
-              <h3>Food Name</h3>
-              <h6>Price: $20</h6>
-              <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil
-                optio, quibusdam aliquam fuga enim praesentium eveniet obcaecati
-                explicabo qui aliquid distinctio eligendi, deserunt, minima
-                omnis.
-              </p>
-            </div>
-            <div>
-              <a href="#">Check Details</a>
-              <a href="#">Make an Order</a>
-            </div>
-          </div>
-          <!-- food card end  -->
-          <!-- food card start -->
-          <div>
             <div>
               <img
-                src="./assets/images/food_images/Foodie_image3.jpg"
+                class="rounded-md shadow-md"
+                src="./assets/images/food_images/Foodie_image14.jpg"
                 alt="food image"
               />
+              <h4 class="text-xl my-2">Food</h4>
             </div>
-            <div>
-              <h3>Food Name</h3>
-              <h6>Price: $20</h6>
-              <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil
-                optio, quibusdam aliquam fuga enim praesentium eveniet obcaecati
-                explicabo qui aliquid distinctio eligendi, deserunt, minima
-                omnis.
-              </p>
-            </div>
-            <div>
-              <a href="#">Check Details</a>
-              <a href="#">Make an Order</a>
-            </div>
-          </div>
-          <!-- food card end  -->
-          <!-- food card start -->
-          <div>
             <div>
               <img
-                src="./assets/images/food_images/Foodie_image4.jpg"
+                class="rounded-md shadow-md"
+                src="./assets/images/food_images/Foodie_image15.jpg"
                 alt="food image"
               />
-            </div>
-            <div>
-              <h3>Food Name</h3>
-              <h6>Price: $20</h6>
-              <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil
-                optio, quibusdam aliquam fuga enim praesentium eveniet obcaecati
-                explicabo qui aliquid distinctio eligendi, deserunt, minima
-                omnis.
-              </p>
-            </div>
-            <div>
-              <a href="#">Check Details</a>
-              <a href="#">Make an Order</a>
+              <h4 class="text-xl my-2">Food</h4>
             </div>
           </div>
-          <!-- food card end  -->
-          <!-- food card start -->
-          <div>
-            <div>
-              <img
-                src="./assets/images/food_images/Foodie_image5.jpg"
-                alt="food image"
-              />
-            </div>
-            <div>
-              <h3>Food Name</h3>
-              <h6>Price: $20</h6>
-              <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil
-                optio, quibusdam aliquam fuga enim praesentium eveniet obcaecati
-                explicabo qui aliquid distinctio eligendi, deserunt, minima
-                omnis.
-              </p>
-            </div>
-            <div>
-              <a href="#">Check Details</a>
-              <a href="#">Make an Order</a>
-            </div>
-          </div>
-          <!-- food card end  -->
-          <!-- food card start -->
-          <div>
-            <div>
-              <img
-                src="./assets/images/food_images/Foodie_image6.jpg"
-                alt="food image"
-              />
-            </div>
-            <div>
-              <h3>Food Name</h3>
-              <h6>Price: $20</h6>
-              <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil
-                optio, quibusdam aliquam fuga enim praesentium eveniet obcaecati
-                explicabo qui aliquid distinctio eligendi, deserunt, minima
-                omnis.
-              </p>
-            </div>
-            <div>
-              <a href="#">Check Details</a>
-              <a href="#">Make an Order</a>
-            </div>
-          </div>
-          <!-- food card end  -->
-          <!-- food card start -->
-          <div>
-            <div>
-              <img
-                src="./assets/images/food_images/Foodie_image7.jpg"
-                alt="food image"
-              />
-            </div>
-            <div>
-              <h3>Food Name</h3>
-              <h6>Price: $20</h6>
-              <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil
-                optio, quibusdam aliquam fuga enim praesentium eveniet obcaecati
-                explicabo qui aliquid distinctio eligendi, deserunt, minima
-                omnis.
-              </p>
-            </div>
-            <div>
-              <a href="#">Check Details</a>
-              <a href="#">Make an Order</a>
-            </div>
-          </div>
-          <!-- food card end  -->
-        </div>
-      </section>
-    </main>
+        </section>
+        <!-- foods section  -->
+        <section class="py-4 px-2">
+          <h2 class="text-xl text-center mb-4 sm:text-2xl sm:mb-6">
+            Our Latest Dishes
+          </h2>
 
-    <footer>
-      <p>Copyright &copy; to Foodie | 2017-2021</p>
+          <div class="grid sm:grid-cols-2 gap-5">
+            <!-- food card start -->
+            <div class="bg-gray-200 rounded-md shadow-lg">
+              <div class="mb-3">
+                <img
+                  class="rounded-md object-cover object-center"
+                  src="./assets/images/food_images/Foodie_image16.jpg"
+                  alt="food image"
+                />
+              </div>
+              <div class="py-3">
+                <h3 class="text-xl">Food Name</h3>
+                <h6 class="my-1 py-2 inline-block text-purple-900 rounded-sm">
+                  Price: $20
+                </h6>
+                <p class="leading-7 my-3">
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Nihil optio, quibusdam aliquam fuga enim praesentium eveniet
+                  obcaecati explicabo qui aliquid distinctio eligendi, deserunt,
+                  minima omnis.
+                </p>
+              </div>
+              <div class="mb-3 pb-3 flex justify-between items-center">
+                <a class="bg-yellow-300 py-2 px-3 text-yellow-900" href="#"
+                  >Check Details</a
+                >
+                <a class="bg-indigo-300 py-2 px-3 text-indigo-900" href="#"
+                  >Make an Order</a
+                >
+              </div>
+            </div>
+            <!-- food card end  -->
+            <!-- food card start -->
+            <div class="bg-gray-200 rounded-md shadow-lg">
+              <div class="mb-3">
+                <img
+                  class="rounded-md object-cover object-center"
+                  src="./assets/images/food_images/Foodie_image17.jpg"
+                  alt="food image"
+                />
+              </div>
+              <div class="py-3">
+                <h3 class="text-xl">Food Name</h3>
+                <h6 class="my-1 py-2 inline-block text-purple-900 rounded-sm">
+                  Price: $20
+                </h6>
+                <p class="leading-7 my-3">
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Nihil optio, quibusdam aliquam fuga enim praesentium eveniet
+                  obcaecati explicabo qui aliquid distinctio eligendi, deserunt,
+                  minima omnis.
+                </p>
+              </div>
+              <div class="mb-3 pb-3 flex justify-between items-center">
+                <a class="bg-yellow-300 py-2 px-3 text-yellow-900" href="#"
+                  >Check Details</a
+                >
+                <a class="bg-indigo-300 py-2 px-3 text-indigo-900" href="#"
+                  >Make an Order</a
+                >
+              </div>
+            </div>
+            <!-- food card end  -->
+            <!-- food card start -->
+            <div class="bg-gray-200 rounded-md shadow-lg">
+              <div class="mb-3">
+                <img
+                  class="rounded-md object-cover object-center"
+                  src="./assets/images/food_images/Foodie_image18.jpg"
+                  alt="food image"
+                />
+              </div>
+              <div class="py-3">
+                <h3 class="text-xl">Food Name</h3>
+                <h6 class="my-1 py-2 inline-block text-purple-900 rounded-sm">
+                  Price: $20
+                </h6>
+                <p class="leading-7 my-3">
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Nihil optio, quibusdam aliquam fuga enim praesentium eveniet
+                  obcaecati explicabo qui aliquid distinctio eligendi, deserunt,
+                  minima omnis.
+                </p>
+              </div>
+              <div class="mb-3 pb-3 flex justify-between items-center">
+                <a class="bg-yellow-300 py-2 px-3 text-yellow-900" href="#"
+                  >Check Details</a
+                >
+                <a class="bg-indigo-300 py-2 px-3 text-indigo-900" href="#"
+                  >Make an Order</a
+                >
+              </div>
+            </div>
+            <!-- food card end  -->
+            <!-- food card start -->
+            <div class="bg-gray-200 rounded-md shadow-lg">
+              <div class="mb-3">
+                <img
+                  class="rounded-md object-cover object-center"
+                  src="./assets/images/food_images/Foodie_image20.jpg"
+                  alt="food image"
+                />
+              </div>
+              <div class="py-3">
+                <h3 class="text-xl">Food Name</h3>
+                <h6 class="my-1 py-2 inline-block text-purple-900 rounded-sm">
+                  Price: $20
+                </h6>
+                <p class="leading-7 my-3">
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Nihil optio, quibusdam aliquam fuga enim praesentium eveniet
+                  obcaecati explicabo qui aliquid distinctio eligendi, deserunt,
+                  minima omnis.
+                </p>
+              </div>
+              <div class="mb-3 pb-3 flex justify-between items-center">
+                <a class="bg-yellow-300 py-2 px-3 text-yellow-900" href="#"
+                  >Check Details</a
+                >
+                <a class="bg-indigo-300 py-2 px-3 text-indigo-900" href="#"
+                  >Make an Order</a
+                >
+              </div>
+            </div>
+            <!-- food card end  -->
+            <!-- food card start -->
+            <div class="bg-gray-200 rounded-md shadow-lg">
+              <div class="mb-3">
+                <img
+                  class="rounded-md object-cover object-center"
+                  src="./assets/images/food_images/Foodie_image21.jpg"
+                  alt="food image"
+                />
+              </div>
+              <div class="py-3">
+                <h3 class="text-xl">Food Name</h3>
+                <h6 class="my-1 py-2 inline-block text-purple-900 rounded-sm">
+                  Price: $20
+                </h6>
+                <p class="leading-7 my-3">
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Nihil optio, quibusdam aliquam fuga enim praesentium eveniet
+                  obcaecati explicabo qui aliquid distinctio eligendi, deserunt,
+                  minima omnis.
+                </p>
+              </div>
+              <div class="mb-3 pb-3 flex justify-between items-center">
+                <a class="bg-yellow-300 py-2 px-3 text-yellow-900" href="#"
+                  >Check Details</a
+                >
+                <a class="bg-indigo-300 py-2 px-3 text-indigo-900" href="#"
+                  >Make an Order</a
+                >
+              </div>
+            </div>
+            <!-- food card end  -->
+            <!-- food card start -->
+            <div class="bg-gray-200 rounded-md shadow-lg">
+              <div class="mb-3">
+                <img
+                  class="rounded-md object-cover object-center"
+                  src="./assets/images/food_images/Foodie_image22.jpg"
+                  alt="food image"
+                />
+              </div>
+              <div class="py-3">
+                <h3 class="text-xl">Food Name</h3>
+                <h6 class="my-1 py-2 inline-block text-purple-900 rounded-sm">
+                  Price: $20
+                </h6>
+                <p class="leading-7 my-3">
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Nihil optio, quibusdam aliquam fuga enim praesentium eveniet
+                  obcaecati explicabo qui aliquid distinctio eligendi, deserunt,
+                  minima omnis.
+                </p>
+              </div>
+              <div class="mb-3 pb-3 flex justify-between items-center">
+                <a class="bg-yellow-300 py-2 px-3 text-yellow-900" href="#"
+                  >Check Details</a
+                >
+                <a class="bg-indigo-300 py-2 px-3 text-indigo-900" href="#"
+                  >Make an Order</a
+                >
+              </div>
+            </div>
+            <!-- food card end  -->
+            <!-- food card start -->
+            <div class="bg-gray-200 rounded-md shadow-lg">
+              <div class="mb-3">
+                <img
+                  class="rounded-md object-cover object-center"
+                  src="./assets/images/food_images/Foodie_image23.jpg"
+                  alt="food image"
+                />
+              </div>
+              <div class="py-3">
+                <h3 class="text-xl">Food Name</h3>
+                <h6 class="my-1 py-2 inline-block text-purple-900 rounded-sm">
+                  Price: $20
+                </h6>
+                <p class="leading-7 my-3">
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Nihil optio, quibusdam aliquam fuga enim praesentium eveniet
+                  obcaecati explicabo qui aliquid distinctio eligendi, deserunt,
+                  minima omnis.
+                </p>
+              </div>
+              <div class="mb-3 pb-3 flex justify-between items-center">
+                <a class="bg-yellow-300 py-2 px-3 text-yellow-900" href="#"
+                  >Check Details</a
+                >
+                <a class="bg-indigo-300 py-2 px-3 text-indigo-900" href="#"
+                  >Make an Order</a
+                >
+              </div>
+            </div>
+            <!-- food card end  -->
+            <!-- food card start -->
+            <div class="bg-gray-200 rounded-md shadow-lg">
+              <div class="mb-3">
+                <img
+                  class="rounded-md object-cover object-center"
+                  src="./assets/images/food_images/Foodie_image24.jpg"
+                  alt="food image"
+                />
+              </div>
+              <div class="py-3">
+                <h3 class="text-xl">Food Name</h3>
+                <h6 class="my-1 py-2 inline-block text-purple-900 rounded-sm">
+                  Price: $20
+                </h6>
+                <p class="leading-7 my-3">
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Nihil optio, quibusdam aliquam fuga enim praesentium eveniet
+                  obcaecati explicabo qui aliquid distinctio eligendi, deserunt,
+                  minima omnis.
+                </p>
+              </div>
+              <div class="mb-3 pb-3 flex justify-between items-center">
+                <a class="bg-yellow-300 py-2 px-3 text-yellow-900" href="#"
+                  >Check Details</a
+                >
+                <a class="bg-indigo-300 py-2 px-3 text-indigo-900" href="#"
+                  >Make an Order</a
+                >
+              </div>
+            </div>
+            <!-- food card end  -->
+            <!-- food card start -->
+            <div class="bg-gray-200 rounded-md shadow-lg">
+              <div class="mb-3">
+                <img
+                  class="rounded-md object-cover object-center"
+                  src="./assets/images/food_images/Foodie_image5.jpg"
+                  alt="food image"
+                />
+              </div>
+              <div class="py-3">
+                <h3 class="text-xl">Food Name</h3>
+                <h6 class="my-1 py-2 inline-block text-purple-900 rounded-sm">
+                  Price: $20
+                </h6>
+                <p class="leading-7 my-3">
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Nihil optio, quibusdam aliquam fuga enim praesentium eveniet
+                  obcaecati explicabo qui aliquid distinctio eligendi, deserunt,
+                  minima omnis.
+                </p>
+              </div>
+              <div class="mb-3 pb-3 flex justify-between items-center">
+                <a class="bg-yellow-300 py-2 px-3 text-yellow-900" href="#"
+                  >Check Details</a
+                >
+                <a class="bg-indigo-300 py-2 px-3 text-indigo-900" href="#"
+                  >Make an Order</a
+                >
+              </div>
+            </div>
+            <!-- food card end  -->
+            <!-- food card start -->
+            <div class="bg-gray-200 rounded-md shadow-lg">
+              <div class="mb-3">
+                <img
+                  class="rounded-md object-cover object-center"
+                  src="./assets/images/food_images/Foodie_image6.jpg"
+                  alt="food image"
+                />
+              </div>
+              <div class="py-3">
+                <h3 class="text-xl">Food Name</h3>
+                <h6 class="my-1 py-2 inline-block text-purple-900 rounded-sm">
+                  Price: $20
+                </h6>
+                <p class="leading-7 my-3">
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Nihil optio, quibusdam aliquam fuga enim praesentium eveniet
+                  obcaecati explicabo qui aliquid distinctio eligendi, deserunt,
+                  minima omnis.
+                </p>
+              </div>
+              <div class="mb-3 pb-3 flex justify-between items-center">
+                <a class="bg-yellow-300 py-2 px-3 text-yellow-900" href="#"
+                  >Check Details</a
+                >
+                <a class="bg-indigo-300 py-2 px-3 text-indigo-900" href="#"
+                  >Make an Order</a
+                >
+              </div>
+            </div>
+            <!-- food card end  -->
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <footer class="bg-pink-500 text-pink-50 py-3 px-4">
+      <p class="text-center">Copyright &copy; to Foodie | 2017-2021</p>
     </footer>
   </body>
 </html>
