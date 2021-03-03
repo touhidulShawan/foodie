@@ -4,7 +4,8 @@
   "description": "Simple Food Receipe Template (To practise tailwindcss)",
   "main": "index.js",
   "scripts": {
-    "dev": "vite"
+    "dev": "vite",
+    "build": "vite build"
   },
   "author": "Touhidul Shawan",
   "license": "ISC",
